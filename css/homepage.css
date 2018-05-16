@@ -1,0 +1,127 @@
+@charset "UTF-8";body {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #777;
+  background: #fff;
+}
+
+#page {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #F7EFDF;
+/*  background-color: #F7EFDF;*/
+}
+.offcanvas #page {
+  overflow: hidden;
+  position: absolute;
+}
+.offcanvas #page:after {
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+}
+
+.container {
+    position: relative;
+}
+
+/*.container img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}*/
+
+#bar-config{/*10000 steps*/
+	width: 20%;
+	height: 3%;
+	position: absolute;
+	right: 8%;
+	top: 5%;
+}
+
+#energy-count{/*10000 steps*/
+	position: absolute;
+	right: 8%;
+	top: 10%;
+}
+
+#leaf1{/*10000 steps*/
+	width: 9.5%;
+	height: 15%;
+	position: absolute;
+	left: 20%;
+	top: 60%;
+	z-index: 5;
+}
+
+#leaf2{/*1 car pool*/
+	width: 8%;
+	height: 13%;
+	position: absolute;
+	left: 65%;
+	top: 60%;    
+	z-index: 5;
+}
+
+#leaf3{/*$10 Ventrue*/
+	width: 13%;
+	height: 13%;
+	position: absolute;
+	left: 20%;
+	top: 40%;
+	z-index: 5;
+}
+
+#leaf4{/*Steal from Alex*/
+	width: 14%;
+	height: 14%;
+	position: absolute;
+	left: 60%;
+	top: 40%;
+	z-index: 5;
+}
+
+#leaf5{/*1 Saved Plastic Bag*/
+	width: 15%;
+	height: 15%;
+	position: absolute;
+	left: 40%;
+	top: 20%;
+	z-index: 5;
+}
+
+#tree{
+	width: 10%;
+	height: 16%;
+	position: absolute;
+	left: 42%;
+	bottom: 25%;
+	z-index: 0;
+}
+
+#plus1{
+	font-size: 60px;
+	position: absolute;
+	left: 50%;
+	top: 42%;
+}
+
+
+
+
