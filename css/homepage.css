@@ -112,6 +112,7 @@
 	z-index: 0;
 }
 
+
 #plus1{
 	font-size: 60px;
 	position: absolute;
@@ -132,7 +133,7 @@
 .reminder .remindertext {
     visibility: hidden;
     width: 300px;
-    background-color: green;
+    background-color: rgb(0, 158, 67);
     color: #fff;
     text-align: center;
     border-radius: 6px;

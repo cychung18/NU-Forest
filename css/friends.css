@@ -175,10 +175,6 @@
 	left: 5%;
 }
 
-.friends-list a{
-	color: grey;
-}
-
 .friends-list{
 	list-style-position: outside;
 	float: left; 
@@ -189,12 +185,20 @@
 	position: relative;
 }
 
+.friends-ranking button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.friends-ranking button:hover {
+    background-color: rgb(210,210,200);
+}
+
 .friends-tree{
 	position: relative;
     float: right;
     width: 75%;
 }
-
 
 /*Style of friends-list*/
 #friends-title{
@@ -252,7 +256,7 @@
 .friends-reminder .friends-remindertext {
     visibility: hidden;
     width: 200px;
-    background-color: green;
+    background-color: rgb(0, 158, 67);
     color: #fff;
     text-align: center;
     border-radius: 6px;
