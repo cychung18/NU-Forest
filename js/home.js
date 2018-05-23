@@ -72,4 +72,8 @@ function update_tree(){
 	}
 }
 
+function share_event(){
+    alert("You have clicked share button!")
+}
+
 init()
