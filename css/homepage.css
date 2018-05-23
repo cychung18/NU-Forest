@@ -54,6 +54,10 @@
 	top: 10%;
 }
 
+.leaf{
+	cursor: pointer;
+}
+
 #leaf1{/*10000 steps*/
 	width: 9.5%;
 	height: 15%;
@@ -131,7 +135,6 @@
     color: #fff;
     text-align: center;
     border-radius: 6px;
-/*    padding: 5px 0;*/
     position: absolute;
     z-index: 1020;
     bottom: 85%;
@@ -147,5 +150,4 @@
 .reminder:hover .remindertext {
     visibility: visible;
     opacity: 1;
-/*    display: inline-block;*/
 }
