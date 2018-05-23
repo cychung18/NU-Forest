@@ -4,7 +4,7 @@ var cur_bar = 0
 var tree_level = 1
 var show_leaves_time = 2000
 var energy_cur = 0
-var energy_goal = 88
+var energy_goal = 100
 var energy_percentage = 0
 function energy_up() {
 	
