@@ -255,7 +255,7 @@
 
 .friends-reminder .friends-remindertext {
     visibility: hidden;
-    width: 200px;
+    /*width: 200px;*/
     background-color: rgb(0, 158, 67);
     color: #fff;
     text-align: center;
@@ -264,7 +264,7 @@
     z-index: 1020;
     bottom: 85%;
     left: 35%;
-    margin-left: 0px;
+    margin-left: 5px;
     font-size: 20px;
     
     /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
