@@ -6,16 +6,17 @@ var show_leaves_time = 2000
 var energy_cur = 0
 var energy_goal = 100
 var energy_percentage = 0
+
+function init(){
+	$("#plus1").hide();
+	document.getElementById("energy-count").innerHTML = energy_cur + " / " + energy_goal;
+}
+
 function energy_up() {
 	
 	update_energy(5);
 	update_progress_bar();
 	update_tree()
-}
-
-function init(){
-	$("#plus1").hide();
-	document.getElementById("energy-count").innerHTML = energy_cur + " / " + energy_goal;
 }
 
 function get_point_event(elem){
@@ -33,7 +34,7 @@ function update_progress_bar(){
 	var elem = document.getElementById("progressbar");  
 	energy_percentage = energy_cur / energy_goal; 
 	elem.style.width = Math.round(energy_percentage * 100) + '%'; 
-	elem.innerHTML = Math.round(energy_percentage * 100) + '%';
+	//elem.innerHTML = Math.round(energy_percentage * 100) + '%';
 }
 
 function update_energy(energy_plus){
@@ -74,6 +75,10 @@ function update_tree(){
 
 function share_event(){
     alert("You have clicked share button!")
+}
+
+function close_collect_tip(){
+	document.getElementById("collect-tip").style.opacity = "0";
 }
 
 init()

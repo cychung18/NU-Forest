@@ -36,7 +36,7 @@ function update_progress_bar(){
 	var elem = document.getElementById("progressbar");  
 	energy_percentage = energy_cur / energy_goal; 
 	elem.style.width = Math.round(energy_percentage * 100) + '%'; 
-	elem.innerHTML = Math.round(energy_percentage * 100) + '%';
+	//elem.innerHTML = Math.round(energy_percentage * 100) + '%';
 }
 
 function update_energy(energy_plus){
