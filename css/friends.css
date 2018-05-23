@@ -16,7 +16,6 @@
   -o-transition: 0.5s;
   transition: 0.5s;
   background-color: #F7EFDF;
-/*  background-color: #F7EFDF;*/
 }
 .offcanvas #page {
   overflow: hidden;
@@ -37,8 +36,13 @@
 }
 
 .container {
-    position: relative;
+	position: relative;
+	width: 720px;
+	content: "";
+    display: table;
+    clear: both;
 }
+
 
 #bar-config{/*10000 steps*/
 	width: 20%;
@@ -52,21 +56,26 @@
 	position: absolute;
 	right: 8%;
 	top: 10%;
+	font-size: 12px;
+}
+
+#progressbar{
+	font-size: 10px;
 }
 
 #leaf1{/*10000 steps*/
+	position: absolute;
 	width: 9.5%;
 	height: 15%;
-	position: absolute;
 	left: 20%;
 	top: 60%;
 	z-index: 5;
 }
 
 #leaf2{/*1 car pool*/
+	position: absolute;
 	width: 8%;
 	height: 13%;
-	position: absolute;
 	left: 65%;
 	top: 60%;    
 	z-index: 5;
@@ -109,10 +118,13 @@
 }
 
 #plus1{
-	font-size: 60px;
+	font-size: 40px;
+	color:rgb(150, 240, 150);
+    text-shadow: 2px 2px white;
 	position: absolute;
-	left: 45%;
+	left: 30%;
 	top: 42%;
+	z-index: 999;
 }
 
 #share1{
@@ -123,10 +135,118 @@
 	bottom: 5%;
 }
 
+.friends-comment{
+	position: absolute;
+	right: 1%;
+	bottom: 5%;
+}
 
-.reminder .remindertext {
+/*input[name="comment"]{}*/
+
+#comment-note1{
+	display: none;
+	width: 200px;
+    word-wrap: break-word;
+	position: absolute;
+	top: 15%;
+	right: 20%;
+}
+
+#comment-note2{
+	display: none;
+	width: 200px;
+    word-wrap: break-word;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+
+
+#comment-note3{
+	display: none;
+	width: 200px;
+    word-wrap: break-word;
+	position: absolute;
+	top: 60%;
+	left: 5%;
+}
+
+.friends-list a{
+	color: grey;
+}
+
+.friends-list{
+	list-style-position: outside;
+	float: left; 
+	width: 25%;
+	border: 2px solid grey;
+	margin-bottom: 3px;
+	line-height: 2;
+	position: relative;
+}
+
+.friends-tree{
+	position: relative;
+    float: right;
+    width: 75%;
+}
+
+
+/*Style of friends-list*/
+#friends-title{
+	font-size: 20px;
+	text-align:center;
+	margin-bottom: 0px;
+	color: rgb(98,148,74);
+	text-shadow: 2px 2px white;
+}
+
+.friends-search{
+	float: left;
+    border: none;
+    margin-right: 5px;
+    margin-left: 3px;
+    font-size: 13px;
+    width: 80%;
+}
+
+::placeholder {
+    color: rgb(180,180,180);
+}
+
+#search-button{
+	font-size: 13px;
+	float: right;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 8px;
+	margin-bottom: 6px;
+}
+
+.friends-ranking{
+	width: 100%;
+	height: 398px;
+	float: left;
+	overflow: scroll;
+	padding: 0;
+	margin: 0;
+}
+
+.friends-element{
+	list-style-position: inside;
+	width: 100%;
+	border: 1px solid rgb(120,120,120);
+	padding-left: 10px;
+	line-height: 4.0;
+	position: relative;
+	background-color:rgb(230,230,220);
+	font-size: 17px;
+}
+
+
+.friends-reminder .friends-remindertext {
     visibility: hidden;
-    width: 300px;
+    width: 200px;
     background-color: green;
     color: #fff;
     text-align: center;
@@ -144,7 +264,7 @@
     transition: opacity 1s;
 }
 
-.reminder:hover .remindertext {
+.friends-reminder:hover .friends-remindertext {
     visibility: visible;
     opacity: 1;
 /*    display: inline-block;*/
