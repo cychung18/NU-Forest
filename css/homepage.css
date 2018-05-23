@@ -130,7 +130,7 @@
 #share1{
 	cursor: pointer;
 	position: absolute;
-	width: 4%;
+	width: 2.5%;
 	height: auto;
 	right: 5%;
 	bottom: 5%;
@@ -141,12 +141,13 @@
     color: #fff;
     text-align: center;
     padding: 12px;
+    border-radius: 6px;
     position: absolute;
     z-index: 1020;
     bottom: 85%;
-    left: 34%;
-    font-size: 20px;
-    opacity: 0.5;
+    left: 38%;
+    font-size: 16px;
+    opacity: 0.8;
     transition: opacity 0.5s;
 }
 
@@ -160,9 +161,9 @@
     position: absolute;
     z-index: 1020;
     bottom: 85%;
-    left: 35%;
+    left: 38%;
     margin-left: 0px;
-    font-size: 20px;
+    font-size: 16px;
     
     /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
     opacity: 0;
