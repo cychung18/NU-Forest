@@ -69,12 +69,14 @@
 		<!-- Tree section -->
 		<div class="container">
 			
+            <span id="collect-tip" >Collect Leaves to grow your Tree!</span>
+
 			<div class="reminder">
-				<img class="leaf" src="images/leaf1.png" alt="leaf1" id="leaf1" onclick="get_point_event(this)">
-				<img class="leaf" src="images/leaf2.png" alt="leaf2" id="leaf2" onclick="get_point_event(this)">
-				<img class="leaf" src="images/leaf3.png" alt="leaf3" id="leaf3" onclick="get_point_event(this)">
-				<img class="leaf" src="images/leaf4.png" alt="leaf4" id="leaf4" onclick="get_point_event(this)">
-				<img class="leaf" src="images/leaf5.png" alt="leaf5" id="leaf5" onclick="get_point_event(this)">
+				<img class="leaf" src="images/leaf1.png" alt="leaf1" id="leaf1" onclick="get_point_event(this)" onmouseover="close_collect_tip()">
+				<img class="leaf" src="images/leaf2.png" alt="leaf2" id="leaf2" onclick="get_point_event(this)" onmouseover="close_collect_tip()">
+				<img class="leaf" src="images/leaf3.png" alt="leaf3" id="leaf3" onclick="get_point_event(this)" onmouseover="close_collect_tip()">
+				<img class="leaf" src="images/leaf4.png" alt="leaf4" id="leaf4" onclick="get_point_event(this)" onmouseover="close_collect_tip()">
+				<img class="leaf" src="images/leaf5.png" alt="leaf5" id="leaf5" onclick="get_point_event(this)" onmouseover="close_collect_tip()">
 				<span class="remindertext">You can collect energy now!</span>
 			</div>
 			<div class="reminder">
@@ -83,7 +85,8 @@
 			</div>
 
 			<p id="plus1">+5</p>
-
+            
+            <p id="progress-bar-text">Progress for Real Tree Planting</p>
 			<div class="reminder">
 				<div class="progress" id="bar-config">
 				    <div class="progress-bar progress-bar-success progress-bar-striped active" id="progressbar"
