@@ -16,7 +16,7 @@ function energy_up() {
 	
 	update_energy(5);
 	update_progress_bar();
-	update_tree()
+	update_tree();
 }
 
 function get_point_event(elem){
@@ -47,6 +47,10 @@ function update_energy(energy_plus){
 function update_tree(){
 
 	var tree_elem = document.getElementById("tree");   
+	if (energy_percentage == 1){
+		alert("See your real tree in \"MY PLANTING\"!");
+	}
+
 	if (energy_percentage >= .75 && tree_level == 3){
 		tree_elem.src = "images/tree4.png";
 		tree_elem.style.width = '36%';
@@ -71,10 +75,21 @@ function update_tree(){
 		setTimeout(show_leaves, show_leaves_time);
 		tree_level = 2
 	}
+	
+}
+
+function share_clicked(){
+    // alert("You have clicked share button!");
+    document.getElementById('share_info').style.display = "block";
 }
 
 function share_event(){
-    alert("You have clicked share button!")
+	alert("You have shared your virtual tree on Facebook!");
+	document.getElementById('share_info').style.display = "none";
+}
+
+function share_cancel(){
+	document.getElementById('share_info').style.display = "none";
 }
 
 function close_collect_tip(){
