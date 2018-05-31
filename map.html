@@ -53,7 +53,7 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="friends.html">Friends</a></li>
-							<li class="active"><a href="map.html">Map</a></li>
+							<li class="active"><a href="map.html">My Planting</a></li>
 							<li class="has-dropdown">
 								<a href="services.html">Account</a>
 								<ul class="dropdown">
@@ -72,25 +72,48 @@
 			<span id="collect-tip">See Details on your tree!</span>
 			<img src="images/map_background.svg" alt="background" style="width: 100%">
 			<div class="reminder" class="pull-right">
+				<!-- The first tree -->
 				<a id="preBack" style="cursor: pointer" 
-      			onclick="openModal();"><img src="images/tree4.png" alt="tree" id="tree" class="cd-trigger" onmouseover="close_collect_tip()"></a>
+      			onclick="openModal1();"><img src="images/tree4.png" alt="tree" id="tree1" class="cd-trigger" onmouseover="close_collect_tip()"></a>
+      			<!-- The second tree -->
+      			<a id="preBack" style="cursor: pointer" 
+      			onclick="openModal2();"><img src="images/tree4.png" alt="tree" id="tree2" class="cd-trigger" onmouseover="close_collect_tip()"></a>
+      			<!-- Remind information -->
 				<span class="remindertext">Click to see details!</span>
 			</div>
 			<div class="reminder">
 				<img src="images/share.png" alt="share.png" id="share1" onclick="share_event()">
 				<span class="remindertext">Share your tree with friends!</span>
 			</div>
-  			<div id="myModal" class="modal">
+
+  			<div id="myModal1" class="modal">
       			<div class="modal-content">
-	          		<span class="close cursor" onclick="closeModal()">&times;</span>
+	          		<span class="close" onclick="closeModal1()">&times;</span>
 	          		<div>
 	          			<img src="images/tree4.png" class="tree-image">
 	          		</div>
-	          		<div class="tree-information">
-	          			<h1>Real tree Information</h1>
+	          		<div class = "tree-information">
+	          			<h1>Pinus sylvestris</h1>
 	          			<ul>
 	          				<li>ID: 201805261111</li>
 	          				<li>location: San Diego</li>
+	          				<li>Contributor: Cindy</li>
+	          			</ul>
+	          		</div>
+      			</div>
+  			</div>
+
+  			<div id="myModal2" class="modal">
+      			<div class="modal-content">
+	          		<span class="close" onclick="closeModal2()">&times;</span>
+	          		<div>
+	          			<img src="images/tree4.png" class="tree-image">
+	          		</div>
+	          		<div class = "tree-information">
+	          			<h1>Haloxylon</h1>
+	          			<ul>
+	          				<li>ID: 201805309487</li>
+	          				<li>location: Houston</li>
 	          				<li>Contributor: Cindy</li>
 	          			</ul>
 	          		</div>
