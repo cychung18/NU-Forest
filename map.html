@@ -82,8 +82,14 @@
 				<span class="remindertext">Click to see details!</span>
 			</div>
 			<div class="reminder">
-				<img src="images/share.png" alt="share.png" id="share1" onclick="share_event()">
+				<img src="images/share.png" alt="share.png" id="share1" onclick="share_clicked()" onmouseover="close_collect_tip()">
 				<span class="remindertext">Share your tree with friends!</span>
+			</div>
+
+			<div id="share_info">
+				<img src="images/sharing.svg" alt="sharing.svg" id="sharing1">
+				<button id="cancel_button" onclick="share_cancel()">Cancel</button>
+				<button id="share_button" onclick="share_event()">Share</button>
 			</div>
 
   			<div id="myModal1" class="modal">
@@ -184,12 +190,11 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Carousel -->
 	<script src="js/owl.carousel.min.js"></script>
-	<!-- map -->
-	<script src="js/map.js"></script>
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	<script src="js/home.js"></script>
+	<script src="js/map.js"></script>
+
 
 
 	<!--PopUp Sources-->
