@@ -67,6 +67,47 @@
   bottom: 5%;
 }
 
+
+#share_info{
+  display: none;
+}
+
+#sharing1{
+/*  visibility: hidden;*/
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  left: 30%;
+  bottom: 40%;
+  z-index: 1000;
+}
+
+
+#cancel_button{
+  position: absolute;
+  width: 120px;
+  height: 36px;
+  left: 33%;
+  bottom: 48%;
+  z-index: 1001;
+  border-radius: 6px;
+  background-color: #F7EFDF;
+  color:black;
+}
+
+#share_button{
+  position: absolute;
+  width: 120px;
+  height: 36px;
+  left: 51.5%;
+  bottom: 48%;
+  z-index: 1001;
+  border-radius: 6px;
+  background-color: #F7EFDF;
+  color:black;
+}
+
+
 #collect-tip{
     background-color: rgb(30, 180, 97);
     color: #fff;
@@ -77,7 +118,7 @@
     bottom: 85%;
     left: 40%;
     font-size: 20px;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: opacity 0.5s;
 }
 
