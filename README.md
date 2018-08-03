@@ -18,6 +18,5 @@ Social Interactions:
 
 We let users interact with other’s trees and change the data on both systems when they steal a leaf. This could encourage them to collect leaves in time to prevent be stolen from others and also engage with their friends in an amusing way. We also let users to leave a comment. This could encourage them to interact as they have the option to express what on their mind when seeing other’s page and what they want to say after stealing the energy.
 
-Blog:
-
+## Blog
 https://www.tumblr.com/blog/earth-colder
